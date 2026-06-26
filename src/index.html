@@ -3,14 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Landing Page</title>
+    <title>TechFlow - Modern Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
 
-<!-- Write Your HTML Here -->
-<h1>Landing Page</h1>
+<!-- ========== NAVIGATION BAR ========== -->
+<nav class="sticky top-0 bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">K</span>
+                </div>
+                <span class="text-xl font-bold text-gray-800">KnitNox</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex gap-8">
+                <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
+                <a href="#product" class="text-gray-600 hover:text-blue-600 transition-colors">Product</a>
+                <a href="#pricing" class="text-gray-600 hover:text-blue-600 transition-colors">Pricing</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+
+            <div class="hidden md:block">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300">
+                    Get Started
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+                <label for="menu-toggle" class="text-gray-600 hover:text-blue-600 cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+
+                <!-- Mobile Menu (Hidden by default, shown when checkbox checked) -->
+                <div class="hidden peer-checked:block absolute left-0 right-0 top-16 bg-white shadow-lg border-t border-gray-100 p-4">
+                    <div class="flex flex-col space-y-3">
+                        <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors px-4 py-2 hover:bg-gray-50 rounded-md">Features</a>
+                        <a href="#product" class="text-gray-600 hover:text-blue-600 transition-colors px-4 py-2 hover:bg-gray-50 rounded-md">Product</a>
+                        <a href="#pricing" class="text-gray-600 hover:text-blue-600 transition-colors px-4 py-2 hover:bg-gray-50 rounded-md">Pricing</a>
+                        <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors px-4 py-2 hover:bg-gray-50 rounded-md">About</a>
+                        <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors px-4 py-2 hover:bg-gray-50 rounded-md">Contact</a>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 w-full">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 
 </body>
 </html>
