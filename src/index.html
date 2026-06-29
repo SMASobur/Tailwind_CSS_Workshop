@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechFlow - Modern Landing Page</title>
+    <title>KnitNox - Modern Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -44,7 +44,7 @@
                     </svg>
                 </label>
 
-                <!-- Mobile Menu (Hidden by default, shown when checkbox checked) -->
+                <!-- Mobile Menu -->
                 <div class="hidden peer-checked:block absolute left-0 right-0 top-16 bg-white shadow-lg border-t border-gray-100 p-4">
                     <div class="flex flex-col space-y-3">
                         <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors px-4 py-2 hover:bg-gray-50 rounded-md">Features</a>
@@ -63,19 +63,52 @@
 </nav>
 
 <!-- ========== HERO SECTION ========== -->
-<section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-    <div class="relative w-full h-96 rounded-lg overflow-hidden">
-        <img src="https://picsum.photos/1200/600" alt="Hero Background" class="w-full h-full object-cover">
+<section class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <!-- Hero Text -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                    Build Better
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                        Products
+                    </span>
+                    Faster
+                </h1>
+                <p class="mt-4 text-lg sm:text-xl text-gray-600 leading-relaxed">
+                    Streamline your workflow with our powerful platform.
+                    Collaborate seamlessly and ship products your users will love.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors duration-300 shadow-lg shadow-blue-200">
+                        Start Free Trial
+                    </button>
+                    <button class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-md hover:bg-gray-50 transition-colors duration-300">
+                        Learn More
+                    </button>
+                </div>
+                <div class="mt-6 flex items-center gap-6 justify-center md:justify-start">
+                    <div class="flex -space-x-2">
+                        <img src="https://i.pravatar.cc/40?img=1" class="w-10 h-10 rounded-full border-2 border-white">
+                        <img src="https://i.pravatar.cc/40?img=2" class="w-10 h-10 rounded-full border-2 border-white">
+                        <img src="https://i.pravatar.cc/40?img=3" class="w-10 h-10 rounded-full border-2 border-white">
+                        <img src="https://i.pravatar.cc/40?img=4" class="w-10 h-10 rounded-full border-2 border-white">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 border-2 border-white flex items-center justify-center text-blue-600 font-bold text-sm">
+                            +2k
+                        </div>
+                    </div>
+                    <span class="text-sm text-gray-500">Trusted by 2,000+ teams</span>
+                </div>
+            </div>
 
-        <div class="absolute inset-0 bg-black/50"></div>
-
-        <div class="absolute inset-0 flex items-center justify-center">
-            <div class="text-center text-white px-4">
-                <h2 class="text-4xl font-bold mb-4">Welcome to KnitNox</h2>
-                <p class="text-xl mb-6">Your modern solution starts here.</p>
-                <button class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors duration-300">
-                    Explore
-                </button>
+            <!-- Hero Image -->
+            <div class="w-full md:w-1/2">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl blur-2xl opacity-20"></div>
+                    <img src="https://picsum.photos/600/400?random=1"
+                         alt="Hero Image"
+                         class="relative rounded-2xl shadow-2xl w-full h-auto">
+                </div>
             </div>
         </div>
     </div>
@@ -201,54 +234,53 @@
 </section>
 
 <!-- ========== PRICING SECTION ========== -->
-<section id="pricing" class="py-16">
+<section id="pricing" class="py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Simple, Transparent Pricing</h2>
             <p class="mt-4 text-lg text-gray-600">Choose the plan that works best for your team.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+            <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
                 <h3 class="text-xl font-bold text-gray-800 mb-2">Basic</h3>
                 <p class="text-3xl font-bold text-gray-900 mb-4">29,99:-</p>
                 <p class="text-gray-600 mb-4">Perfect for getting started</p>
                 <ul class="text-left space-y-2 mb-6">
-                    <li class="flex items-center gap-2">10 Projects</li>
-                    <li class="flex items-center gap-2">5GB Storage</li>
-                    <li class="flex items-center gap-2">Basic Support</li>
-                    <li class="flex items-center gap-2 text-gray-400">Advanced Features</li>
-
+                    <li class="flex items-center gap-2">✓ 10 Projects</li>
+                    <li class="flex items-center gap-2">✓ 5GB Storage</li>
+                    <li class="flex items-center gap-2">✓ Basic Support</li>
+                    <li class="flex items-center gap-2 text-gray-400">✗ Advanced Features</li>
                 </ul>
                 <button class="w-full bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-colors duration-300">
                     Choose Plan
                 </button>
             </div>
 
-            <div class="bg-white shadow-xl rounded-lg p-6 text-center border-2 border-blue-500 scale-105">
-                <span class="inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full mb-2">Popular</span>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Pro</h3>
+            <div class="bg-white shadow-xl rounded-lg p-6 text-center border-2 border-blue-500 scale-105 relative">
+                <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-sm px-3 py-1 rounded-full">Popular</span>
+                <h3 class="text-xl font-bold text-gray-800 mb-2 mt-4">Pro</h3>
                 <p class="text-3xl font-bold text-blue-600 mb-4">129,99:-</p>
                 <p class="text-gray-600 mb-4">Best for growing teams</p>
                 <ul class="text-left space-y-2 mb-6">
-                    <li class="flex items-center gap-2">Unlimited Projects</li>
-                    <li class="flex items-center gap-2">50GB Storage</li>
-                    <li class="flex items-center gap-2">Priority Support</li>
-                    <li class="flex items-center gap-2">Advanced Features</li>
+                    <li class="flex items-center gap-2">✓ Unlimited Projects</li>
+                    <li class="flex items-center gap-2">✓ 50GB Storage</li>
+                    <li class="flex items-center gap-2">✓ Priority Support</li>
+                    <li class="flex items-center gap-2">✓ Advanced Features</li>
                 </ul>
                 <button class="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300">
                     Choose Plan
                 </button>
             </div>
 
-            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+            <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
                 <h3 class="text-xl font-bold text-gray-800 mb-2">Enterprise</h3>
                 <p class="text-3xl font-bold text-gray-900 mb-4">299,99:-</p>
                 <p class="text-gray-600 mb-4">For large organizations</p>
                 <ul class="text-left space-y-2 mb-6">
-                    <li class="flex items-center gap-2">Unlimited Projects</li>
-                    <li class="flex items-center gap-2">400GB Storage</li>
-                    <li class="flex items-center gap-2">24/7 Support</li>
-                    <li class="flex items-center gap-2">Custom Solutions</li>
+                    <li class="flex items-center gap-2">✓ Unlimited Projects</li>
+                    <li class="flex items-center gap-2">✓ 400GB Storage</li>
+                    <li class="flex items-center gap-2">✓ 24/7 Support</li>
+                    <li class="flex items-center gap-2">✓ Custom Solutions</li>
                 </ul>
                 <button class="w-full bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-colors duration-300">
                     Choose Plan
@@ -260,7 +292,7 @@
 </section>
 
 <!-- ========== ABOUT SECTION ========== -->
-<section id="about" class="py-16 bg-gray-50">
+<section id="about" class="py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">About Me</h2>
@@ -294,15 +326,15 @@
                 </p>
 
                 <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                    <div class="bg-gray-50 p-4 rounded-lg shadow-sm text-center">
                         <span class="text-2xl font-bold text-blue-600">2+</span>
                         <p class="text-sm text-gray-600">Projects</p>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                    <div class="bg-gray-50 p-4 rounded-lg shadow-sm text-center">
                         <span class="text-2xl font-bold text-blue-600">5+</span>
                         <p class="text-sm text-gray-600">Technologies</p>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                    <div class="bg-gray-50 p-4 rounded-lg shadow-sm text-center">
                         <span class="text-2xl font-bold text-blue-600">100%</span>
                         <p class="text-sm text-gray-600">Commitment</p>
                     </div>
@@ -332,7 +364,7 @@
 </section>
 
 <!-- ========== CONTACT SECTION ========== -->
-<section id="contact" class="py-16 bg-gray-50">
+<section id="contact" class="py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Get In Touch</h2>
@@ -412,10 +444,10 @@
                         <a href="#" class="bg-gray-100 w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
                             <span class="text-xl">💻</span>
                         </a>
-                        <a href="https://github.com/SMASobur" class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors">
+                        <a href="https://github.com/SMASobur" target="_blank" class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors">
                             <span class="text-xl">🔗</span>
                         </a>
-                        <a href="#about" class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center hover:bg-red-200 transition-colors">
+                        <a href="#" class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center hover:bg-red-200 transition-colors">
                             <span class="text-xl">📷</span>
                         </a>
                     </div>
@@ -474,10 +506,10 @@
                     <a href="#" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
                         <span class="text-sm">💻</span>
                     </a>
-                    <a href="https://github.com/SMASobur" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                    <a href="https://github.com/SMASobur" target="_blank" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
                         <span class="text-sm">🔗</span>
                     </a>
-                    <a href="#about" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                    <a href="#" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
                         <span class="text-sm">📷</span>
                     </a>
                 </div>
